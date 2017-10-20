@@ -14,6 +14,10 @@ public class UFOController : MonoBehaviour {
 	private float leftX;
 	[SerializeField]
 	private float rightX;
+	[SerializeField]
+	private GameObject laser = null;
+
+
 
 	private Transform _transform;
 	private Vector2 _currentPos;
@@ -22,11 +26,13 @@ public class UFOController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		_transform = gameObject.GetComponent<Transform> ();
+
 	}
 	
 	// Update is called once per frame
 	//Set the Speed and allow object to move.
 	void FixedUpdate () {
+
 		speed = 0.35f;
 		_currentPos = _transform.position;
 		//This allows smoother movement when going backwards
@@ -43,6 +49,12 @@ public class UFOController : MonoBehaviour {
 		
 		if(Input.GetKey(KeyCode.S))
 			_currentPos -= new Vector2 (0,speed);
+		if(Input.GetKeyDown(KeyCode.Space)){
+
+				GameObject o = Instantiate (laser);
+				o.transform.position = gameObject.transform.position;
+
+		}
 
 		boundaryCheck ();
 		_transform.position = _currentPos;

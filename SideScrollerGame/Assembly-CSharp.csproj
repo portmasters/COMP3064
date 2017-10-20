@@ -55,11 +55,16 @@
      <Compile Include="Assets\Scripts\ExplosionController.cs" />
      <Compile Include="Assets\Scripts\EyeBallController.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\LaserController.cs" />
+     <Compile Include="Assets\Scripts\LazerColider.cs" />
+     <Compile Include="Assets\Scripts\RedUFOController.cs" />
      <Compile Include="Assets\Scripts\RoadController.cs" />
      <Compile Include="Assets\Scripts\UFOCollider.cs" />
      <Compile Include="Assets\Scripts\UFOController.cs" />
      <None Include="Assets\Sounds\BloodSFX\ReadMe.txt" />
-     <None Include="Assets\Sprites\NonUsed\Blood decal pack\readme.txt" />
+     <None Include="Assets\Sprites\Other\Spritesheet\sheet.xml" />
+     <None Include="Assets\Sounds\explosionsoundslite\readme.txt" />
+     <None Include="Assets\Sprites\Other2\480x480px frames.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>I:/Programs/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

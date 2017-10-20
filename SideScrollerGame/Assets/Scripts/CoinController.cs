@@ -27,7 +27,7 @@ public class CoinController : MonoBehaviour {
 
 	//Reset object to random location within boundaries
 	public void Reset(){
-		float y = Random.Range (-0.1f, 0.1f); 
+		float y = Random.Range (topY, bottomY); 
 		_transform.position	=	new Vector2 (startX+Random.Range(0,50), y);
 	}
 

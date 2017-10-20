@@ -33,9 +33,9 @@ public class EyeBallController : MonoBehaviour {
 
 	//Reset object to random location. Set the direction and speed of the object to a random number
 	public void Reset(){
-		float xSpeed = Random.Range (minX, maxX);
-		float ySpeed = Random.Range (minY, maxY);
-		_currentSpeed = new Vector2 (xSpeed, ySpeed);
+		float xAcel = Random.Range (minX, maxX);
+		float yAcel = Random.Range (minY, maxY);
+		_currentSpeed = new Vector2 (xAcel, yAcel);
 
 		float y = Random.Range (-0.1f, 0.1f); 
 		_transform.position	=	new Vector2 (startX+Random.Range(0,50), y);

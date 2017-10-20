@@ -8,7 +8,7 @@ public class UFOCollider : MonoBehaviour {
 	[SerializeField]
 	GameObject death = null;
 	[SerializeField]
-	GameController gameController;
+	private GameController gameController;
 
 
 	private AudioSource deathSound = null;
@@ -34,19 +34,22 @@ public class UFOCollider : MonoBehaviour {
 				coinSound.Play ();
 
 			//Update Scoreboard
-			gameController.Score += 50;
+			gameController.Score += 100;
 
 		}
 		//Enemy Collision
-		else if (external.gameObject.tag == ("Enemy")) {
-			Debug.Log ("EyeBall Collision\n");
+		else if (external.gameObject.tag == ("Enemy") ||external.gameObject.tag == ("Enemy2")  ) {
+			Debug.Log ("Enemy Collision\n");
 
 			//Explode upon collision
 			GameObject o = Instantiate (death);
 			o.transform.position = external.gameObject.transform.position;
 
 			//Reset Object
-			external.gameObject.GetComponent <EyeBallController> ().Reset();
+			if(external.gameObject.tag == ("Enemy")) 
+				external.gameObject.GetComponent <EyeBallController> ().Reset();
+			else
+				external.gameObject.GetComponent <RedUFOController> ().Reset();
 
 			//Set deathSound to the colider object audio source. Play deathSound
 			deathSound = external.gameObject.GetComponent<AudioSource>();

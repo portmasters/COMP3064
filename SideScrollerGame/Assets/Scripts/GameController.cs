@@ -51,7 +51,7 @@ public class GameController : MonoBehaviour {
 	//Set certain canvas objects to hidden upon game start
 	private void initialize(){
 		Score = 0;
-		Life = 5;
+		Life = 2;
 
 		//set visibility
 		gameOverLb.gameObject.SetActive (false);
@@ -75,6 +75,7 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		initialize ();
+
 	}
 	
 	// Update is called once per frame
