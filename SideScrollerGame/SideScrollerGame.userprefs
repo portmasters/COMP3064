@@ -1,23 +1,21 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EyeBallController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameController.cs">
     <Files>
-      <File FileName="Assets\Scripts\CoinController.cs" Line="30" Column="40" />
-      <File FileName="Assets\Scripts\LaserController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EyeBallController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\RoadController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\UFOController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ExplosionController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GameController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\UFOCollider.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\LazerColider.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\RedUFOController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CoinController.cs" Line="11" Column="4" />
+      <File FileName="Assets\Scripts\LaserController.cs" Line="6" Column="39" />
+      <File FileName="Assets\Scripts\EyeBallController.cs" Line="11" Column="44" />
+      <File FileName="Assets\Scripts\RoadController.cs" Line="6" Column="38" />
+      <File FileName="Assets\Scripts\UFOController.cs" Line="20" Column="18" />
+      <File FileName="Assets\Scripts\ExplosionController.cs" Line="6" Column="43" />
+      <File FileName="Assets\Scripts\GameController.cs" Line="63" Column="56" />
+      <File FileName="Assets\Scripts\UFOCollider.cs" Line="11" Column="77" />
+      <File FileName="Assets\Scripts\LazerColider.cs" Line="11" Column="67" />
+      <File FileName="Assets\Scripts\RedUFOController.cs" Line="11" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="I:\ProgrammingStorage\Unity\SideScrollerGame\Assets\Scripts\RedUFOController.cs" line="98" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

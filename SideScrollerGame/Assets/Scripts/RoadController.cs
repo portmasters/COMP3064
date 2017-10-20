@@ -2,6 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Source File Name:RoadController.cs
+ * Author's Name: Albert Nguyen
+ * Last Modified by: Albert Nguyen
+ * Date Last Modified: Oct 20, 2017
+ * 
+ *Program Descrption: The background movement
+ *
+ *Revision History:
+ *
+*/
 public class RoadController : MonoBehaviour {
 
 	//My Variables

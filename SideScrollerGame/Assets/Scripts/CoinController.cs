@@ -2,6 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Source File Name:CoinCollider.cs
+ * Author's Name: Albert Nguyen
+ * Last Modified by: Albert Nguyen
+ * Date Last Modified: Oct 20, 2017
+ * Program Descrption: How the Coin works.
+ * Revision History:
+ *
+*/
+
+
+
 public class CoinController : MonoBehaviour {
 
 	//My Variables
@@ -25,13 +37,13 @@ public class CoinController : MonoBehaviour {
 		Reset ();
 	}
 
-	//Reset object to random location within boundaries
+	//Reset the coin to random location within boundaries
 	public void Reset(){
 		float y = Random.Range (topY, bottomY); 
 		_transform.position	=	new Vector2 (startX+Random.Range(0,50), y);
 	}
 
-	//Object will move towards the left. If object hit boundaries of x call Reset() function
+	//Coin will move towards the left. If the coin hits the boundaries of x or y call Reset() function
 	void Update () {
 		_currentPos = _transform.position;
 		_currentPos -= new Vector2 (speed, 0);

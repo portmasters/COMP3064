@@ -2,6 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Source File Name:EyeBallController.cs
+ * Author's Name: Albert Nguyen
+ * Last Modified by: Albert Nguyen
+ * Date Last Modified: Oct 20, 2017
+ * 
+ *Program Descrption: How the Eyeball works
+ *
+ *Revision History:
+ *
+*/
+
 public class EyeBallController : MonoBehaviour {
 
 	//My variables
@@ -31,7 +43,7 @@ public class EyeBallController : MonoBehaviour {
 		Reset ();
 	}
 
-	//Reset object to random location. Set the direction and speed of the object to a random number
+	//Reset eyeball to a random location within bounds. Set the direction and speed of the eyeball to a random number
 	public void Reset(){
 		float xAcel = Random.Range (minX, maxX);
 		float yAcel = Random.Range (minY, maxY);
@@ -42,7 +54,7 @@ public class EyeBallController : MonoBehaviour {
 
 	}
 		
-	//Object will move towards the left with randomize direction of up or down. If object hit boundaries of x or y call Reset() function
+	//Eyeball will move towards the left with randomize direction of up or down. If the eyeball hit boundaries of x or y call Reset() function
 	void Update () {
 		_currentPos = _transform.position;
 		_currentPos -= _currentSpeed;

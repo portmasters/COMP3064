@@ -5,6 +5,18 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/*
+ * Source File Name: GameController.cs
+ * Author's Name: Albert Nguyen
+ * Last Modified by: Albert Nguyen
+ * Date Last Modified: Oct 20, 2017
+ * 
+ *Program Descrption: How the UI works
+ *
+ *Revision History:
+ *
+*/
+
 public class GameController : MonoBehaviour {
 
 	//my varibles
@@ -21,7 +33,7 @@ public class GameController : MonoBehaviour {
 
 
 	private int score = 0;
-	private int life = 5;
+	private int life = 2;
 
 	//The get/set of score.
 	public int Score{
@@ -72,17 +84,12 @@ public class GameController : MonoBehaviour {
 		scoreLb.gameObject.SetActive(false);
 	}
 
-	// Use this for initialization
+
 	void Start () {
 		initialize ();
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
 		
-	}
-
 	//Button will reload scene
 	public void ResetBtnOnClick(){
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().name);

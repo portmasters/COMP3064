@@ -2,6 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Source File Name:UFOController.cs
+ * Author's Name: Albert Nguyen
+ * Last Modified by: Albert Nguyen
+ * Date Last Modified: Oct 20, 2017
+ * 
+ *Program Descrption:How PLAYER UFO is controlled
+ *
+ *Revision History:
+ *
+*/
 public class UFOController : MonoBehaviour {
 
 
@@ -49,6 +60,7 @@ public class UFOController : MonoBehaviour {
 		
 		if(Input.GetKey(KeyCode.S))
 			_currentPos -= new Vector2 (0,speed);
+		//Allow UFO to shoot the laser by instantiating the laser05 each time SPACE is pressed
 		if(Input.GetKeyDown(KeyCode.Space)){
 
 				GameObject o = Instantiate (laser);

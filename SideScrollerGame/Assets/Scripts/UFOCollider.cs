@@ -2,6 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Source File Name:UFOCollider.cs
+ * Author's Name: Albert Nguyen
+ * Last Modified by: Albert Nguyen
+ * Date Last Modified: Oct 20, 2017
+ * 
+ *Program Descrption: How the PLAYER UFO collision work with external object
+ *
+ *Revision History:
+ *
+*/
 public class UFOCollider : MonoBehaviour {
 
 	//My Variables
@@ -25,10 +36,10 @@ public class UFOCollider : MonoBehaviour {
 		if (external.gameObject.tag == ("PickUp")) {
 			Debug.Log ("Coin Collision\n");
 
-			//Reset Object
+			//Calls the Reset function from the external collider
 			external.gameObject.GetComponent <CoinController> ().Reset();
 
-			//set coinSound to the colider object audio source. Play coinSound
+			//set coinSound to the coins audio source. Play coinSound
 			coinSound = external.gameObject.GetComponent<AudioSource>();
 			if (coinSound != null) 
 				coinSound.Play ();
@@ -45,7 +56,7 @@ public class UFOCollider : MonoBehaviour {
 			GameObject o = Instantiate (death);
 			o.transform.position = external.gameObject.transform.position;
 
-			//Reset Object
+			//Calls the Reset function from the external collider
 			if(external.gameObject.tag == ("Enemy")) 
 				external.gameObject.GetComponent <EyeBallController> ().Reset();
 			else
@@ -56,7 +67,7 @@ public class UFOCollider : MonoBehaviour {
 			if (deathSound != null) 
 				deathSound.Play ();
 
-			//Upon collision remove a life. Destroy gameobject when life==0 and game music will end as well.
+			//Upon collision remove a life. Destroy PLAYER UFO when life==0. Background music will end since PLAYER UFO has the audio source.
 			gameController.Life--;
 			if (gameController.Life == 0)
 				Destroy (gameObject);
